@@ -54,7 +54,7 @@ export namespace Install {
 
                     // 检查是否需要使用代理
                     const tz = Intl.DateTimeFormat().resolvedOptions().timeZone.toLocaleLowerCase()
-                    if (XString.Contains(tz, "shanghai") || !XString.IsNullOrEmpty(gitproxy) || process.env.GITHUB_ACTIONS != null) {
+                    if ((XString.Contains(tz, "shanghai") || !XString.IsNullOrEmpty(gitproxy)) && process.env.GITHUB_ACTIONS == null) {
                         if (XString.IsNullOrEmpty(gitproxy)) gitproxy = "https://ghproxy.cn/"
                         url = `${gitproxy.endsWith("/") ? gitproxy : gitproxy + "/"}${url}`
                         XLog.Debug(`Install.Process: using git proxy of ${gitproxy}.`)
