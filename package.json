@@ -2,7 +2,7 @@
   "name": "io.eframework.node.luban",
   "displayName": "EFramework Luban for Node",
   "description": "简化了 Luban 导表工具的安装和使用。",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "author": {
     "name": "EFramework Innovation",
