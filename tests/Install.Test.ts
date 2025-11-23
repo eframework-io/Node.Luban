@@ -8,5 +8,5 @@ import { Install } from "../src/Install"
 XTest.Test("Install Toolchains", async () => {
     XFile.DeleteDirectory(XEnv.LocalPath)
     XFile.CreateDirectory(XEnv.LocalPath)
-    await Install.Process(["--install=3.12.0", "--gitproxy=https://ghproxy.cn/"]) // Install specified version.
+    await Install.Process(["--install=3.12.0", "--gitproxy=https://ghproxy.net/"]) // Install specified version.
 })

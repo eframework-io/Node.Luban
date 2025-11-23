@@ -25,7 +25,7 @@ lubanx [options]
   --help              查看文档
   --version           显示版本
   --install=<ver>     安装工具链，默认：3.13.0
-  --gitproxy=<url>    git 代理地址，默认：https://ghproxy.cn/
+  --gitproxy=<url>    git 代理地址，默认：https://ghproxy.net/，可选：https://ghfast.top/
 ```
 
 ## 常见问题
